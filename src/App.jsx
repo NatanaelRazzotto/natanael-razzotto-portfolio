@@ -19,17 +19,29 @@ function App() {
   
   const coursesData = [
     {
+      title: "Introdução a Plataforma Java",
+      year: "2024",
+      institution: "Dio",
+      image: courses 
+    },
+    {
+      title: "Introdução ao Desenvolvimento Full Stack com a Deal",
+      year: "2024",
+      institution: "Dio",
+      image: courses 
+    },
+    // {
+    //   title: "Full Stack Week",
+    //   year: "2025",
+    //   description: "Sistema de Auto Atendimento em React",
+    //   institution: "Full Stack Club",
+    //   image: courses // Usa a imagem importada
+    // },
+    {
       title: "Programa Start",
       year: "2023",
       description: "Introdução a Lógica de Programação I, II, e III (Java)",
       institution: "Capgemini",
-      image: courses // Usa a imagem importada
-    },
-    {
-      title: "AWS Academy Cloud Foundations",
-      year: "2020",
-      description: "Fundamentos de Cloud AWS",
-      institution: "Amazon Web Services Training and Certification",
       image: courses
     },
     {
@@ -40,13 +52,24 @@ function App() {
       image: courses
     },
     {
-      title: "AWS Academy Cloud Foundations",
+      title: "Entity Framework Core: Banco De Dados De Forma Eficiente",
       year: "2020",
-      description: "Fundamentos de Cloud AWS",
-      institution: "Amazon Web Services Training and Certification",
+      institution: "Alura",
       image: courses
     },
-    // Adicione os outros cursos aqui...
+    {
+      title: "GIT E GITHUB Controle e compartilhe seu código",
+      year: "2020",   
+      institution: "Alura",
+      image: courses
+    },
+    {
+      title: "V Prime Experts",
+      year: "2020",   
+      institution: "Alura",
+      image: courses
+    },
+    
   ];
 
   useEffect(() => {
@@ -382,8 +405,9 @@ function App() {
       <div className="card">
         <div className="box">
           <img className="cardImg" src={course.image} alt={course.title} />
-          <div className="text">{course.title}</div>
-          <p>{course.description}<br/>{course.institution}</p>
+          <div style={{color:"#d35704"}} className="text">{course.title}</div>
+          <p style={{color:"#ff970f"}}>{course.year}<br/></p>
+          <p>{course.description ? course.description : ""}<br/>{course.institution}</p>
         </div>
       </div>
     </SwiperSlide>
