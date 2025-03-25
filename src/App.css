@@ -48,6 +48,7 @@
 /*  */
 
 *{
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -205,7 +206,8 @@ section .title{
   /* font-family: 'Ubuntu', sans-serif; */
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 40px;
+  
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -236,12 +238,13 @@ section .title::after{
   transform: translateX(-50%);
 }
 
-.about , .services, .skills, .teams, .contact, footer {
+.about , .services, .tec, .skills, .teams, .contact, footer {
   /* font-family: 'Roboto' sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
 .about .about-content, 
 .services .serv-content,
+.tec .serv-content,
 .skills .skills-content,
 .contact .contact-content{
   display: flex;
@@ -298,27 +301,37 @@ section .title::after{
   height: 400px;
   object-fit: cover;
   border-radius: 6px;
-  padding-left: 50px;
+   padding-left: 50px;
+
 }
 /* sessão services */
-.services, .teams{
+.tec, .services, .teams{
   background: #111;
   color: #fff;
 }
+.tec .title::before,
 .services .title::before,
 .teams .title::before{
-  background: #fff;
+  background: #111;
 }
-.services .title::after,
-.teams .title::after{
+
+.tec .title::after{
   background: #111;
   content: "Minhas Experiências";
 }
+
+.services .title::after,
+.services .title::after{
+  background: #111;
+  content: "Vertentes de Atuação";
+}
+
 #subtitle{
   background: #111;
   content: "Acesse nossos Canais, Sites e Páginas";
 }
 
+.tec .serv-content .card,
 .services .serv-content .card{
   width: calc(33% - 20px);
   background: #222;
@@ -328,24 +341,32 @@ section .title::after{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.tec .serv-content .card:hover
 .services .serv-content .card:hover{
   background: #d35704;
 }
+.tec .serv-content .box,
 .services .serv-content .box{
   transition: all 0.3s ease;
 }
+.tec .serv-content .card:hover .box,
 .services .serv-content .card:hover .box{
   transform: scale(1.05s);
 }
+.tec .serv-content .card ion-icon,
 .services .serv-content .card ion-icon{
   font-size:  50px;
    color: #d35704;
 }
+.tec .serv-content .card:hover ion-icon,
 .services .serv-content .card:hover ion-icon{
   color: #fff;
 }
+.tec .serv-content .card .text,
 .services .serv-content .card .text{
-  font-size: 25px;
+  font-size: 18px;
+  color: #ff970f;
   font-weight: 500;
   margin: 10px 0 7px 0;    
 }
@@ -358,9 +379,10 @@ section .title::after{
   width: calc(50% - 30px);
 }
 /* sessão paginas */
-.teams .title::after{
+/* .teams .title::after{
   content: "Com Certificado e Sem Certificado";
-}
+  background: #111;
+} */
 .card{
   color: white;
 }
@@ -423,7 +445,7 @@ section .title::after{
 }
 /* sessao contatos */
 .contact .title::after{
-  content:"Fale conosco"
+  content:"Fale Comigo"
 }
 .contact .contact-content .column{
   width: calc(50% - 30px);
@@ -441,21 +463,34 @@ section .title::after{
   margin-bottom: 10px;
 }
 .contact .contact-content .left .icons{
-  margin: 10px 0;
+  margin: 10px ;
 }
 
 .contact .contact-content .row{
+ 
+
   display: flex;
-  height: 65px;
   align-items: center;
+  gap: 15px; /* Espaço entre os elementos */
 }
 .contact .contact-content .row .info{
+  flex-grow: 1;
+  gap: 8px;
   margin-left: 30px;    
 }
 .contact .contact-content .row .info .head{
+  color: #d35704;
  font-weight: 500;
 }
+
+.contact .contact-content .row .info .a{
+  color: #ff970f;
+ 
+ font-weight: "bold";
+}
 .contact .contact-content .row .info .sub-title{
+  
+ 
   color:#333;
 }
 
@@ -463,6 +498,28 @@ section .title::after{
   font-size: 25px;
   color: #d35704;
 }
+
+.whatsapp-btn {
+  margin-top: 5px; /* Ajuste o valor conforme necessário */
+}
+
+.whatsapp-btn a {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn a:hover {
+  background-color: #1EBE56;
+}
+
 
 .contact .right form .fields{
   display: flex;
@@ -540,18 +597,37 @@ footer span a:hover{
   text-decoration: underline;
 }
 
+
 /* responsive */
+/* responsive */
+@media(max-width:1450px){
+
+  .about .about-content .left img{
+    width: 400px;
+    height: 350px;
+    padding-left: 80px;
+}
+}
+
 @media(max-width:1300px){
   .navbar .max-width{
       margin-left: 0;
   }
-}
-@media(max-width:1104px){
+
   .about .about-content .left img{
-      width: 350px;
-      height: 350px;
-  }
-  
+    width: 400px;
+    height: 350px;
+    padding-left: 50px;
+}
+}
+@media(max-width:1204px){
+  .about .about-content .left img{
+    width: 400px;
+    height: 350px;
+    padding-left: 50px;
+}
+
+
 }
 @media(max-width:991px){
   .navbar .max-width{
@@ -614,6 +690,7 @@ footer span a:hover{
   .about .about-content .right{
       flex: 100%;
   }
+  .tec .serv-content .card,
   .services .serv-content .card{
       width: calc(50% - 10px);
       margin-bottom: 20px;
@@ -626,6 +703,10 @@ footer span a:hover{
 
 }
 @media(max-width:690px){
+  *{
+    font-size: 18px;
+  }
+
   .home .home-content .text-2{
       font-size: 60px; 
   
@@ -637,9 +718,16 @@ footer span a:hover{
       font-size: 20px ;      
   }
 
-  .services .serv-content .card{
-      width: 100%
-   
+  .tec .serv-content,
+  .services .serv-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Apenas uma coluna */
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+
+  .tec .serv-content .card,
+  .services .serv-content .card {
+    width: 100%;
   }
 }
 @media(max-width:500px){
@@ -650,6 +738,47 @@ footer span a:hover{
   .home .home-content .text-3{
       font-size: 27px;      
   }
+
+}
+@media(max-width:400px){
+
+  section {
+    padding: 20px 0;
+}
+
+  section .title::after {
+    position: absolute;
+    bottom: -50px;
+
+  }
+  .home .home-content{
+    padding-top: 50px;
+  }
+
+  .home .home-content .text-1{
+    font-size: 20px; 
+
+}
+  .home .home-content .text-2{
+      font-size: 40px; 
+  
+  }
+  .home .home-content .text-3{
+      font-size: 20px;      
+  }
+
+  .home .home-content a{
+    font-size: 10px;    
+    margin-right: 20px; 
+}
+
+.about .about-content .left img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+   padding-left: 0px; 
+}
 
 }
 

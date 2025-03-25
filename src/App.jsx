@@ -32,6 +32,20 @@ function App() {
       institution: "Amazon Web Services Training and Certification",
       image: courses
     },
+    {
+      title: "AWS Academy Cloud Foundations",
+      year: "2020",
+      description: "Fundamentos de Cloud AWS",
+      institution: "Amazon Web Services Training and Certification",
+      image: courses
+    },
+    {
+      title: "AWS Academy Cloud Foundations",
+      year: "2020",
+      description: "Fundamentos de Cloud AWS",
+      institution: "Amazon Web Services Training and Certification",
+      image: courses
+    },
     // Adicione os outros cursos aqui...
   ];
 
@@ -146,7 +160,7 @@ function App() {
               <div className="column right">
               <div className="text">Sou o Natanael, <span ref={typed2El} className="typing-2"></span></div>
                 <p>
-                  Sou Desenvolvedor Full Stack com conhecimentos fundamentados em POO, voltado para as tecnologias C#, Java e Angular. Iniciei no mundo do desenvolvimento de software há 5 anos, seguindo minha formação em Java e .NET, me especializei em ASP.NET, com o qual estagiei. Em minha vida acadêmica, desenvolvi projetos em várias tecnologias, de Desktop à WEB. Nos projetos que estive envolvido, sempre busquei o planejamento e a construção dos mesmos, levando em conta as ferramentas que melhor trariam resultados, não sendo uma barreira a dinamicidade e a inovação.
+                  Sou Desenvolvedor Full Stack com conhecimentos fundamentados em POO, voltado para as tecnologias Node.js, Java e .NET. Iniciei no mundo do desenvolvimento de software em 2018, seguindo minha formação em Java e .NET, me especializei em ASP.NET, com o qual estagiei. Em minha vida acadêmica, desenvolvi projetos em várias tecnologias, para Desktop, WEB e Mobile. Nos projetos que estive envolvido, sempre busquei o planejamento e a construção dos mesmos, levando em conta as ferramentas que melhor trariam resultados, não sendo uma barreira a dinamicidade e a inovação.
                   <br /><br />
                 </p>
                 <div className="text">Formação Acadêmica: <span ref={typed3El} className="typing-3"></span></div>
@@ -196,6 +210,13 @@ function App() {
       <div className="card">
         <div className="box">
           <ion-icon name="brush-outline"></ion-icon>
+          <div className="text">Aplicações MOBILE</div>
+          <p>Aplicativos para Android, com base em tecnologia Java, React-Native ou Quasar.</p>
+        </div>
+      </div>
+      <div className="card">
+        <div className="box">
+          <ion-icon name="brush-outline"></ion-icon>
           <div className="text">Banco de dados</div>
           <p>Construção da base de dados com tecnologias SQL e NoSQL.</p>
         </div>
@@ -211,25 +232,42 @@ function App() {
         <div className="box">
           <ion-icon name="brush-outline"></ion-icon>
           <div className="text">Projetos</div>
-          <p>Planejamento, Estruturação de Requisitos, Teste, Diagramas UML.</p>
+          <p>Planejamento, Estruturação de Requisitos, Teste, Diagramas UML. </p>
         </div>
       </div>
-      <div className="card">
-        <div className="box">
-          <ion-icon name="brush-outline"></ion-icon>
-          <div className="text">Design</div>
-          <p>Criação de Interface, Imagens, Animações e Vídeos.</p>
-        </div>
-      </div>
+     
     </div>                
   </div>
 </section>
 
         {/* <!--sessao serviços--> */}
-        <section className="services" id="technology">
+        <section className="tec" id="technology">
             <div className="max-width">
                 <h2 className="title">Tecnologias</h2>
                 <div className="serv-content">                 
+                <div className="card">
+                        <div className="box">          
+                            <div className="text">JAVA</div>  
+                            <p>Java from Android (Atualizando)</p>             
+                            <p>Java Swing from Desktop (Atualizando)</p> 
+                       </div>
+                    </div>
+                    <div className="card">
+                        <div className="box">          
+                            <div className="text">JavaScript/TypeScript</div>              
+                            <p>Angular 8</p>                         
+                            <p>React - Next.js</p> 
+                            <p>Nest.js (Prisma e Type ORM)</p>
+                       </div>
+                    </div>
+                  
+                    <div className="card">
+                        <div className="box">          
+                            <div className="text">JAVA WEB</div> 
+                            <p>Spring Boot (Atualizando)</p>              
+                            <p>JSP e SERVELET </p> 
+                       </div>
+                    </div>
                     <div className="card">
                         <div className="box">          
                             <div className="text">C#/.NET</div>              
@@ -246,32 +284,17 @@ function App() {
                             <p>Entity Framework </p>  
                         </div>
                     </div>
+                   
                     <div className="card">
-                        <div className="box">                             
-                            <p>HTML, CSS</p>                           
+                        <div className="box">   
+                        <div className="text">HTML, CSS</div>                              
+                            <p>Tailwind</p>                       
                             <p>Bootstrap, Material Design</p>      
                             <p>Angular Material</p>                      
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="box">          
-                            <div className="text">JAVA</div>              
-                            <p>Java Swing from Desktop (Atualizando)</p> 
-                       </div>
-                    </div>
-                    <div className="card">
-                        <div className="box">          
-                            <div className="text">JAVA WEB</div>              
-                            <p>JSP e SERVELET (Atualizando)</p> 
-                       </div>
-                    </div>
-                    <div className="card">
-                        <div className="box">          
-                            <div className="text">JavaScript/TypeScript</div>              
-                            <p>Angular 8</p> 
-                            <p>Node.JS</p> 
-                       </div>
-                    </div>
+                    
+                   
                     <div className="card">
                         <div className="box">          
                             <div className="text">Python WEB</div>              
@@ -299,7 +322,7 @@ function App() {
                             <div className="text">Infraestrutura</div>            
                             <p>Windows / Linux </p> 
                             <p>ISS Express, TomCat e GeoServer</p> 
-                            <p>Ubuntu, Debian, Docker e AWS</p>  
+                            <p>Ubuntu, Debian, Docker, Vercel e AWS</p>  
                        </div>
                     </div>
                     <div className="card">
@@ -350,64 +373,20 @@ function App() {
   slidesPerView={3}
   breakpoints={{
     0: { slidesPerView: 1 },
-    600: { slidesPerView: 2 },
-    1000: { slidesPerView: 3 }
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
   }}
 >
   {coursesData.map((course, index) => (
     <SwiperSlide key={index}>
-        <div className="card">
-          <div className="box">
-            <img className="cardImg" src={courses} alt="Curso Programa Start" />
-            <div className="text">Programa Start</div>
-            <p>
-              Realizado no ano de 2023 <br />
-              Introdução a Lógica de Programação I, II, e III (Java).<br />
-              Capgemini
-            </p>
-          </div>
+      <div className="card">
+        <div className="box">
+          <img className="cardImg" src={course.image} alt={course.title} />
+          <div className="text">{course.title}</div>
+          <p>{course.description}<br/>{course.institution}</p>
         </div>
-        <div className="card">
-          <div className="box">
-            <img className="cardImg" src={courses} alt="Curso AWS Academy Cloud Foundations" />
-            <div className="text">AWS Academy Cloud Foundations</div>
-            <p>
-              Realizado no ano de 2020 <br />
-              Amazon Web Services Training and Certification
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="box">
-            <img className="cardImg" src={courses} alt="Curso Entity Framework Core" />
-            <div className="text">Entity Framework Core: Banco De Dados De Forma Eficiente</div>
-            <p>
-              Realizado no ano de 2020 <br />
-              Alura
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="box">
-            <img  className="cardImg" src={courses} alt="Curso GIT e GITHUB" />
-            <div className="text">GIT E GITHUB Controle e compartilhe seu código</div>
-            <p>
-              Realizado no ano de 2020 <br />
-              Alura
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="box">
-            <img className="cardImg" src={courses} alt="Curso V Prime Experts" />
-            <div className="text">V Prime Experts</div>
-            <p>
-              Realizado no ano de 2020 <br /><br />
-              Prime Control
-            </p>
-          </div>
-        </div>
-        </SwiperSlide>
+      </div>
+    </SwiperSlide>
   ))}
 </Swiper>
     </div>
@@ -418,9 +397,8 @@ function App() {
             <div className="max-width">
                 <h2 className="title">Contato</h2>
                 <div className="contact-content">
-                    <div className="column left">
-                        <div className="text">Fale Comigo</div>
-                        <p>Para entrar em contato comigo, você pode optar pelo envio de e-mail. Mas caso opte por telefone, sugiro o numero fixo. Desde já grato pelo interesse!</p>   
+                    <div className="column left">                
+                        <p>Para entrar em contato comigo, você pode optar pelo envio de e-mail. Mas caso opte por telefone, sugiro o contato via WhatsApp. Desde já grato pelo interesse!</p>   
                         <div className="icons">
                             <div className="row">
                                 <ion-icon name="person-outline"></ion-icon>
@@ -430,17 +408,28 @@ function App() {
                                 </div>
                             </div>                                 
                             <div className="row">
-                                <ion-icon name="person-outline"></ion-icon>
-                                <div className="info">
-                                    <div className="head">Celular (WhatsApp)</div>
-                                    <div className="sub-title">(41) 99238-1469</div>                                   
-                                </div>
-                            </div>
+  <ion-icon name="person-outline"></ion-icon>
+  <div className="info">
+    <div className="head">Celular (WhatsApp)</div>
+    <div className="sub-title">(41) 99238-1469</div> 
+    <div className="whatsapp-btn">
+      <a
+        href={`https://wa.me/5541992381469?text=Olá! Obrigado por entrar em contado! Vamos conversar!?`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
                             <div className="row">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <div className="info">
                                     <div className="head">Email</div>
-                                        <div className="sub-title">natanael8447@outlook.com</div>                                   
+                                        <div className="sub-title">natanaelrazzottodev@gmail.com
+                                        </div>                                   
                                 </div>                            
                             </div> 
                             <div className="row">
