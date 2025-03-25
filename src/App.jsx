@@ -1,21 +1,118 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react';
+import Typed from 'typed.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import perfilDev from './assets/PERFIL.jpeg';
-import courses from './assets/courses.jpg'
-import './App.css'
+import courses from './assets/courses.jpg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [navSticky, setNavSticky] = useState(false);
+  const [scrollUpVisible, setScrollUpVisible] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
+  
+  // Refs para os elementos Typed
+  const typedEl = useRef(null);
+  const typed2El = useRef(null);
+  const typed3El = useRef(null);
+
+  
+  const coursesData = [
+    {
+      title: "Programa Start",
+      year: "2023",
+      description: "Introdução a Lógica de Programação I, II, e III (Java)",
+      institution: "Capgemini",
+      image: courses // Usa a imagem importada
+    },
+    {
+      title: "AWS Academy Cloud Foundations",
+      year: "2020",
+      description: "Fundamentos de Cloud AWS",
+      institution: "Amazon Web Services Training and Certification",
+      image: courses
+    },
+    // Adicione os outros cursos aqui...
+  ];
+
+  useEffect(() => {
+    // Configuração do scroll listener
+    const handleScroll = () => {
+      setNavSticky(window.scrollY > 20);
+      setScrollUpVisible(window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Configuração do Typed.js
+    const typed = new Typed(typedEl.current, {
+      strings: ["Desenvolvedor de Sistemas","Desenvolvedor Full Stack","Desenvolvedor C#", "Desenvolvedor Java", "Desenvolvedor Angular", "Fotógrafo"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    const typed2 = new Typed(typed2El.current, {
+      strings: ["Desenvolvedor Full Stack","Desenvolvedor C#", "Desenvolvedor Java", "Desenvolvedor Angular", "Desenvolvedor Python"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    const typed3 = new Typed(typed3El.current, {
+      strings: ["Bacharel em Sistemas de Informação","de 2018 à 2022","na UNIBRASIL"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      typed.destroy();
+      typed2.destroy();
+      typed3.destroy();
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
+  const carouselOptions = {
+    items: 3,
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  };
 
   return (
     <>
       <div>
-      <div className="scrool-up-btn">
-            <ion-icon name="chevron-up-outline"></ion-icon>
-        </div>
-        <div className="navbar">
-            <div className="max-width">
+      <div className={`scroll-up-btn ${scrollUpVisible ? 'show' : ''}`} onClick={scrollToTop}>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+      </div>
+        <div className={`navbar ${navSticky ? 'sticky' : ''}`}>
+        <div className="max-width">
                 <div className="logo"><a href="#">NRD<span> portfólio</span></a></div>
-                <ul className="menu">
+              
+                <div className="menu-btn" onClick={toggleMenu}>
+                <ion-icon name={menuActive ? "close-outline" : "menu-outline"}></ion-icon>
+              </div>
+              <ul className={`menu ${menuActive ? 'active' : ''}`}>
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#services">Serviços</a></li>
@@ -23,9 +120,6 @@ function App() {
                     <li><a href="#teams">Cursos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
-                <div className="menu-btn">
-                    <ion-icon name="menu-outline"></ion-icon>   
-                </div>
             </div>
         </div>
         {/* <!--home inicio--> */}
@@ -35,7 +129,7 @@ function App() {
                 <div className="home-content">
                     <div className="text-1">Olá, meu nome é</div>
                     <div className="text-2">Natanael Razzotto</div>
-                    <div className="text-3">sou <span className="typing"></span></div>
+                    <div className="text-3">Sou <span ref={typedEl} className="typing"></span></div>
                     <a href="#contact">Contactar</a>
                     <a href="https://github.com/NatanaelRazzotto">GitHub</a>
                 </div>
@@ -50,16 +144,12 @@ function App() {
                 <img src={perfilDev} alt="Perfil" />
               </div>
               <div className="column right">
-                <div className="text">
-                  Sou o Natanael, <span className="typing-2"></span>
-                </div>
+              <div className="text">Sou o Natanael, <span ref={typed2El} className="typing-2"></span></div>
                 <p>
                   Sou Desenvolvedor Full Stack com conhecimentos fundamentados em POO, voltado para as tecnologias C#, Java e Angular. Iniciei no mundo do desenvolvimento de software há 5 anos, seguindo minha formação em Java e .NET, me especializei em ASP.NET, com o qual estagiei. Em minha vida acadêmica, desenvolvi projetos em várias tecnologias, de Desktop à WEB. Nos projetos que estive envolvido, sempre busquei o planejamento e a construção dos mesmos, levando em conta as ferramentas que melhor trariam resultados, não sendo uma barreira a dinamicidade e a inovação.
                   <br /><br />
                 </p>
-                <div className="text">
-                  Formação Acadêmica: <span className="typing-3"></span>
-                </div>
+                <div className="text">Formação Acadêmica: <span ref={typed3El} className="typing-3"></span></div>
 
                 {/* Comentário em JSX */}
                 {/* <div className="text">
@@ -255,10 +345,20 @@ function App() {
   <div className="max-width">
     <h2 className="title">Meus Cursos</h2>
     <div className="teams-content">
-      <div className="carousel owl-carousel">
+    <Swiper
+  spaceBetween={20}
+  slidesPerView={3}
+  breakpoints={{
+    0: { slidesPerView: 1 },
+    600: { slidesPerView: 2 },
+    1000: { slidesPerView: 3 }
+  }}
+>
+  {coursesData.map((course, index) => (
+    <SwiperSlide key={index}>
         <div className="card">
           <div className="box">
-            <img src={courses} alt="Curso Programa Start" />
+            <img className="cardImg" src={courses} alt="Curso Programa Start" />
             <div className="text">Programa Start</div>
             <p>
               Realizado no ano de 2023 <br />
@@ -269,7 +369,7 @@ function App() {
         </div>
         <div className="card">
           <div className="box">
-            <img src={courses} alt="Curso AWS Academy Cloud Foundations" />
+            <img className="cardImg" src={courses} alt="Curso AWS Academy Cloud Foundations" />
             <div className="text">AWS Academy Cloud Foundations</div>
             <p>
               Realizado no ano de 2020 <br />
@@ -279,7 +379,7 @@ function App() {
         </div>
         <div className="card">
           <div className="box">
-            <img src={courses} alt="Curso Entity Framework Core" />
+            <img className="cardImg" src={courses} alt="Curso Entity Framework Core" />
             <div className="text">Entity Framework Core: Banco De Dados De Forma Eficiente</div>
             <p>
               Realizado no ano de 2020 <br />
@@ -289,7 +389,7 @@ function App() {
         </div>
         <div className="card">
           <div className="box">
-            <img src={courses} alt="Curso GIT e GITHUB" />
+            <img  className="cardImg" src={courses} alt="Curso GIT e GITHUB" />
             <div className="text">GIT E GITHUB Controle e compartilhe seu código</div>
             <p>
               Realizado no ano de 2020 <br />
@@ -299,7 +399,7 @@ function App() {
         </div>
         <div className="card">
           <div className="box">
-            <img src={courses} alt="Curso V Prime Experts" />
+            <img className="cardImg" src={courses} alt="Curso V Prime Experts" />
             <div className="text">V Prime Experts</div>
             <p>
               Realizado no ano de 2020 <br /><br />
@@ -307,7 +407,9 @@ function App() {
             </p>
           </div>
         </div>
-      </div>
+        </SwiperSlide>
+  ))}
+</Swiper>
     </div>
   </div>
 </section>
