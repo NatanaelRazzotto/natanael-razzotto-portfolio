@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import perfilDev from './assets/3090CL35051.jpg';
+import perfilDev from './assets/3090CL35051.JPG';
 import courses from './assets/courses.jpg';
 import './App.css';
 
