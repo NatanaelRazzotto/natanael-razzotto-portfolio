@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import perfilDev from './assets/PERFIL.jpeg';
+import perfilDev from './assets/3090CL35051.jpg';
 import courses from './assets/courses.jpg';
 import './App.css';
 
@@ -46,14 +46,14 @@ function App() {
     
     // Configuração do Typed.js
     const typed = new Typed(typedEl.current, {
-      strings: ["Desenvolvedor de Sistemas","Desenvolvedor Full Stack","Desenvolvedor C#", "Desenvolvedor Java", "Desenvolvedor Angular", "Fotógrafo"],
+      strings: ["Desenvolvedor de Sistemas","Desenvolvedor Full Stack","Desenvolvedor C#", "Desenvolvedor Java", "Desenvolvedor Node.js", "Fotógrafo"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
     });
 
     const typed2 = new Typed(typed2El.current, {
-      strings: ["Desenvolvedor Full Stack","Desenvolvedor C#", "Desenvolvedor Java", "Desenvolvedor Angular", "Desenvolvedor Python"],
+      strings: ["Desenvolvedor Full Stack","Desenvolvedor Node.js","Desenvolvedor Next.js","Desenvolvedor Nest.js", "Desenvolvedor Angular", "Desenvolvedor Java", "Desenvolvedor C#" ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
@@ -426,16 +426,9 @@ function App() {
                                 <ion-icon name="person-outline"></ion-icon>
                                 <div className="info">
                                     <div className="head">Nome</div>
-                                   <div className="sub-title"> Natanael Orthey Zanoni Razzotto</div>                                   
+                                   <div className="sub-title"> Natanael Orthey Z. Razzotto</div>                                   
                                 </div>
-                            </div>    
-                            <div className="row">
-                                <ion-icon name="person-outline"></ion-icon>
-                                <div className="info">
-                                    <div className="head">Telefone (Preferencial)</div>
-                                    <div className="sub-title">(41) 3589-1640</div>                                   
-                                </div>
-                            </div>    
+                            </div>                                 
                             <div className="row">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <div className="info">
@@ -491,7 +484,7 @@ function App() {
         </section>
         {/* <!--sessãoi rodape--> */}
         <footer>
-            <span>Criado por NRD - <a href="#">Natanael Razzotto</a> em 2023</span>
+            <span>Criado em React por NRD - <a href="#">Natanael Razzotto</a> - 2025</span>
         </footer>
         
       </div>
