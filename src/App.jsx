@@ -205,7 +205,7 @@ function App() {
                   <strong>Conquista Principal:</strong> Recebi a aprovação e nota **10** em meu TCC.
                 </p>
                 <a href="https://www.linkedin.com/in/natanaelrazzotto/">Linkedin</a> 
-                <a href="#">Download CV</a>   
+                <a href="https://drive.google.com/file/d/1gEXnoRGZPV6-BqoBOmHJ_ocmIQir187E/view">Currículo</a>   
               </div>
             </div>
           </div>
