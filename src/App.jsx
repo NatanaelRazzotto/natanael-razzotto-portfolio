@@ -18,6 +18,37 @@ function App() {
 
   
   const coursesData = [
+       {
+      title: "Primeiros Passos com React Native & Expo",
+      year: "2025",
+      institution: "Dio",
+      image: courses 
+    },
+       {
+      title: "Configurando seu Ambiente de Desenvolvimento para React Native",
+      year: "2025",
+      institution: "Dio",
+      image: courses 
+    },
+       {
+      title: "Introdução ao .NET",
+      year: "2025",
+      institution: "Dio",
+      image: courses 
+    },
+       {
+      title: "Introduction to .NET web development with ASP.NET Core",
+      year: "2025",
+      institution: "MICROSOFT LEARNING ",
+      image: courses 
+    },
+        {
+      title: "Build a web API with minimal API, ASP.NET Core, and .NET ",
+      year: "2025",
+      institution: "MICROSOFT LEARNING ",
+      image: courses 
+    },
+ 
     {
       title: "Introdução a Plataforma Java",
       year: "2024",
@@ -205,7 +236,7 @@ function App() {
                   <strong>Conquista Principal:</strong> Recebi a aprovação e nota **10** em meu TCC.
                 </p>
                 <a href="https://www.linkedin.com/in/natanaelrazzotto/">Linkedin</a> 
-                <a href="https://drive.google.com/file/d/1gEXnoRGZPV6-BqoBOmHJ_ocmIQir187E/view">Currículo</a>   
+                <a href="https://drive.google.com/file/d/1aPIcwdovrfL1ObZxNdLghtdRcjSpqVsP/view?usp=sharing">Currículo</a>   
               </div>
             </div>
           </div>
