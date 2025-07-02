@@ -1,9 +1,15 @@
 :root {
+
+  --secondary-color: #292929;  
+  --title-color:  #d35704;  
+
+   background: linear-gradient(to bottom, #000000, #141414);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+ 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -89,7 +95,7 @@
         section {
             padding: 4rem 4rem;
             text-align: center;          
-            background-color: #4CAF50;
+            background-color: var(--secondary-color);
             color: white;
             border-radius: 2rem;
             margin-bottom: 2rem;
@@ -100,14 +106,22 @@
         }
 
         .emphasis{
-            background-color: #d35704;
+            background: linear-gradient(to bottom right, var(--title-color), #5c2500); 
             border-radius: 0 2rem;
         }
 
         .emphasis-title{
-          background-color:  #d35704;
+          background    : linear-gradient(to bottom, var(--title-color), #e26f21); 
           border-radius: 0 2rem;
           padding: 0.8rem;
+        }
+
+        .emphasis img.emphasis_img {
+            height: 300px;
+            width: 300px;
+            border-radius: 0 1rem;
+            object-fit: cover;
+            object-position: 60% 50%;
         }
 
     
@@ -124,6 +138,7 @@
           width: 200px;
           border-radius: 0 1rem ;
           object-fit: cover;
+          object-position: 60%;
         }
 
         .inner-content {
@@ -133,6 +148,12 @@
           align-items: center; /* ou center, dependendo do layout */
           gap: 1rem;
         }
+
+        .inner-content p {
+            margin-bottom: 1rem;
+        }
+
+
   
         .fundo-total {
               padding: 8rem 4rem;

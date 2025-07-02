@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import Typed from 'typed.js';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import perfilDev from './assets/3090CL35051.JPG';
-import courses from './assets/courses.jpg';
+
 import './App.css';
 
 function App() {
@@ -16,92 +16,6 @@ function App() {
   const typed2El = useRef(null);
   const typed3El = useRef(null);
 
-  
-  const coursesData = [
-       {
-      title: "Primeiros Passos com React Native & Expo",
-      year: "2025",
-      institution: "Dio",
-      image: courses 
-    },
-       {
-      title: "Configurando seu Ambiente de Desenvolvimento para React Native",
-      year: "2025",
-      institution: "Dio",
-      image: courses 
-    },
-       {
-      title: "Introdução ao .NET",
-      year: "2025",
-      institution: "Dio",
-      image: courses 
-    },
-       {
-      title: "Introduction to .NET web development with ASP.NET Core",
-      year: "2025",
-      institution: "MICROSOFT LEARNING ",
-      image: courses 
-    },
-        {
-      title: "Build a web API with minimal API, ASP.NET Core, and .NET ",
-      year: "2025",
-      institution: "MICROSOFT LEARNING ",
-      image: courses 
-    },
- 
-    {
-      title: "Introdução a Plataforma Java",
-      year: "2024",
-      institution: "Dio",
-      image: courses 
-    },
-    {
-      title: "Introdução ao Desenvolvimento Full Stack com a Deal",
-      year: "2024",
-      institution: "Dio",
-      image: courses 
-    },
-    // {
-    //   title: "Full Stack Week",
-    //   year: "2025",
-    //   description: "Sistema de Auto Atendimento em React",
-    //   institution: "Full Stack Club",
-    //   image: courses // Usa a imagem importada
-    // },
-    {
-      title: "Programa Start",
-      year: "2023",
-      description: "Introdução a Lógica de Programação I, II, e III (Java)",
-      institution: "Capgemini",
-      image: courses
-    },
-    {
-      title: "AWS Academy Cloud Foundations",
-      year: "2020",
-      description: "Fundamentos de Cloud AWS",
-      institution: "Amazon Web Services Training and Certification",
-      image: courses
-    },
-    {
-      title: "Entity Framework Core: Banco De Dados De Forma Eficiente",
-      year: "2020",
-      institution: "Alura",
-      image: courses
-    },
-    {
-      title: "GIT E GITHUB Controle e compartilhe seu código",
-      year: "2020",   
-      institution: "Alura",
-      image: courses
-    },
-    {
-      title: "V Prime Experts",
-      year: "2020",   
-      institution: "Alura",
-      image: courses
-    },
-    
-  ];
 
   useEffect(() => {
     // Configuração do scroll listener
@@ -422,28 +336,7 @@ function App() {
   <div className="max-width">
     <h2 className="title">Meus Cursos</h2>
     <div className="teams-content">
-    <Swiper
-  spaceBetween={20}
-  slidesPerView={3}
-  breakpoints={{
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
-  }}
->
-  {coursesData.map((course, index) => (
-    <SwiperSlide key={index}>
-      <div className="card">
-        <div className="box">
-          <img className="cardImg" src={course.image} alt={course.title} />
-          <div style={{color:"#d35704"}} className="text">{course.title}</div>
-          <p style={{color:"#ff970f"}}>{course.year}<br/></p>
-          <p>{course.description ? course.description : ""}<br/>{course.institution}</p>
-        </div>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
+   
     </div>
   </div>
 </section>

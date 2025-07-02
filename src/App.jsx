@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import perfilDev from './assets/3090CL35051.JPG';
+import courses from './assets/courses.jpg';
+import CarouselFormation from './components/carousel/CarouselFormation.jsx';
 
 function App() {
 
@@ -49,7 +51,7 @@ function App() {
                  <section className="formation">
                      <div className="content">
                           <div className=" emphasis inner-content">                          
-                            <img src={perfilDev} alt="Perfil Natanael Razzotto" />
+                            <img className='emphasis_img' src={perfilDev} alt="Perfil Natanael Razzotto" />
 
                             <h3>Bacharel em Sistemas de Informação</h3>
                             <p> 2018 - 2022 </p>
@@ -64,10 +66,11 @@ function App() {
                       
                     </div>
                  </section>
+                 <CarouselFormation />
                         <section className="services"></section>
                         <section className="projects"></section>
                             <section className="technology"></section>
-                                <section className="learnings"></section>
+                               
                                 <section className="contacts"></section>
             </main>
             
