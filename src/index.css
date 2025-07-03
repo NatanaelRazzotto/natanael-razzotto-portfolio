@@ -101,7 +101,7 @@
         /* componentes */
 
         section {
-            padding: 4rem 4rem;            
+          padding: 1rem 4rem 0 4rem;          
             text-align: center;          
             background-color: var(--secondary-color);
             color: white;
@@ -177,6 +177,7 @@
 
         .about {
               margin-top: -50px; /* sobrepõe a anterior */
+                padding: 4rem 4rem;      
         }
 
 
@@ -195,5 +196,32 @@
             
             .nav-links li {
                 margin: 0.5rem 0;
+            }
+
+            /* corpo da pagina  */
+
+            section {
+                 padding: 1rem 1rem 0 1rem;
+            }
+
+            .about {
+                margin-top: -50px;
+                padding: 1rem;
+            }
+
+            .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            }
+
+            .emphasis img.emphasis_img {
+                height: 300px;
+                width: 100%;
+                border-radius: 0 1rem;
+                object-fit: cover;
+                object-position: 70% 50%;
             }
         }

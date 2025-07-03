@@ -77,3 +77,19 @@
             object-fit: cover;
             object-position: 60% 50%;
         }
+
+              /* Responsividade */
+        @media (max-width: 768px) {
+            .content-projects {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+            }
+
+            .swiper-projects{
+              width: 300px;
+            
+            }
+        }

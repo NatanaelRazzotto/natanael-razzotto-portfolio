@@ -44,10 +44,16 @@ function Projects() {
                       <h3>CATALOGO DE PROJETOS</h3>
                   </div>
                   <div className="swiper-projects">
-                      <Swiper className='swiper-projects'
+                      <Swiper
                     spaceBetween={20}
-                    slidesPerView={2}
-                   
+                    slidesPerView={2}  
+                        breakpoints={{
+                    0: { slidesPerView: 1 },
+                    768: { slidesPerView: 1 },
+                    1024: { slidesPerView: 1 },
+                    1280: { slidesPerView: 2 },
+                    1440: { slidesPerView: 2 },
+                }}                 
                     >
                     {coursesData.map((course, index) => (
                         <SwiperSlide key={index}>
