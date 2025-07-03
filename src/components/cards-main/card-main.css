@@ -1,0 +1,61 @@
+.card-main-info{
+    border-radius: 0 1rem;
+    background-color: #292929
+;
+    /* background: linear-gradient(to bottom right, var(--title-color), #5c2500);  */
+    width: 100%;
+}
+
+.grid-main-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 110px ;
+
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.grid-main-card .item { 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+/* Posicionamento personalizado */
+.grid-main-card .item1 {
+
+    background: linear-gradient(to bottom right, #000000 , #472929); 
+  grid-column: 1 / 2; /* coluna 1 */
+  grid-row: 1 / 2;    /* linha 1 */
+}
+
+.grid-main-card .item2 {
+        padding-right: 2rem;
+        justify-content: right;
+  grid-column: 2 / 4; /* ocupa colunas 2 e 3 */
+  grid-row: 1 / 2;    /* linha 1 */
+}
+
+.grid-main-card .item3 {
+    
+  grid-column: 1 / 4; /* colunas 1 e 2 */
+  grid-row: 2 / 3;    /* linha 2 */
+}
+
+.grid-main-card .item4 {
+  grid-column: 1 / 3; /* coluna 3 */
+  grid-row: 3 / 3;    /* linha 2 */
+  justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.grid-main-card .card-title{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px
+}

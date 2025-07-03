@@ -349,14 +349,14 @@ function App() {
                         <p>Para entrar em contato comigo, você pode optar pelo envio de e-mail. Mas caso opte por telefone, sugiro o contato via WhatsApp. Desde já grato pelo interesse!</p>   
                         <div className="icons">
                             <div className="row">
-                                <ion-icon name="person-outline"></ion-icon>
+             
                                 <div className="info">
                                     <div className="head">Nome</div>
                                    <div className="sub-title"> Natanael Orthey Z. Razzotto</div>                                   
                                 </div>
                             </div>                                 
                             <div className="row">
-  <ion-icon name="person-outline"></ion-icon>
+
   <div className="info">
     <div className="head">Celular (WhatsApp)</div>
     <div className="sub-title">(41) 99238-1469</div> 
@@ -373,7 +373,7 @@ function App() {
 </div>
 
                             <div className="row">
-                                <ion-icon name="person-outline"></ion-icon>
+                            
                                 <div className="info">
                                     <div className="head">Email</div>
                                         <div className="sub-title">natanaelrazzottodev@gmail.com
@@ -381,7 +381,7 @@ function App() {
                                 </div>                            
                             </div> 
                             <div className="row">
-                                <ion-icon name="person-outline"></ion-icon>
+                            
                                 <div className="info">
                                     <div className="head">Endereço</div>
                                         <div className="sub-title">Jardim Bela Vista, Piraquara - PR</div>                                   
