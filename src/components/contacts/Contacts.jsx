@@ -6,7 +6,11 @@ function Contacts(){
             <section className="contacts">
 
                 <div className="contacts-info">
-                    <h2>Contatos</h2>
+                    <div className='header-title'>
+                                       <div className="emphasis-title">
+                                            <h3>CONTATOS</h3>
+                                       </div>
+                                  </div>
                       <div className="contact-content">
                          <div className="column left">                
                         <p>Para entrar em contato comigo, você pode optar pelo envio de e-mail. Mas caso opte por telefone, sugiro o contato via WhatsApp. Desde já grato pelo interesse!</p>   

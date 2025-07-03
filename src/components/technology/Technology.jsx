@@ -16,6 +16,11 @@ function Technology (){
     return(
     <>
       <section className="technology">
+               <div className='header-title'>
+                    <div className="emphasis-title">
+                         <h3>STACK DE TÉCNOLOGIAS</h3>
+                    </div>
+               </div>
            <GridMain listItems={tecsData} />
       </section>
     </>)

@@ -41,17 +41,13 @@ function Projects() {
              <div className="content-projects">           
                 <div className="projects-inner-content">
                   <div className="emphasis-title">
-                      <h3>UNIBRASIL - CENTRO UNIVESITÁRIO DO BRASIL</h3>
+                      <h3>CATALOGO DE PROJETOS</h3>
                   </div>
                   <div className="swiper-projects">
                       <Swiper className='swiper-projects'
                     spaceBetween={20}
-                    slidesPerView={1}
-                    breakpoints={{
-                        0: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 }
-                    }}
+                    slidesPerView={2}
+                   
                     >
                     {coursesData.map((course, index) => (
                         <SwiperSlide key={index}>
@@ -62,10 +58,10 @@ function Projects() {
                   </div>
                   
                 </div>
-                <div className=" emphasis-projects projects-inner-content">                          
+                <div className=" emphasis-projects projects-inner-emphasis">                          
                   <img className='projects_img' src={perfilDev} alt="Perfil Natanael Razzotto" />
-                  <h3>Bacharel em Sistemas de Informação</h3>
-                  <p> 2018 - 2022 </p>
+                  <h3>SIGNA</h3>
+                  <p> Trabalho de Conclusão de Curso </p>
                 </div>
               </div>
 

@@ -2,6 +2,7 @@ import perfilDev from '../../assets/3090CL35051.JPG';
 function Formation (){
     return (<>
      <section className="formation">
+        
                      <div className="content">
                           <div className=" emphasis inner-content">                          
                             <img className='emphasis_img' src={perfilDev} alt="Perfil Natanael Razzotto" />

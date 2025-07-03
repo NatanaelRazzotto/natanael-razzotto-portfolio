@@ -95,6 +95,11 @@ function CarouselFormation() {
 
     return (
         <section className="learnings">
+             <div className='header-title'>
+                                <div className="emphasis-title">
+                                     <h3>CURSOS E CERTIFICADOS</h3>
+                                </div>
+                           </div>
             <Swiper
                 spaceBetween={20}
                 slidesPerView={3}

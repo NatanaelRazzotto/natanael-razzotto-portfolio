@@ -13,6 +13,11 @@ function Services(){
     return(
         <>
             <section className="services">
+                 <div className='header-title'>
+                    <div className="emphasis-title">
+                         <h3>SERVIÇOS OFERECIDOS</h3>
+                    </div>
+               </div>
                 <GridMain listItems={servicesData} />
             </section>
         </>

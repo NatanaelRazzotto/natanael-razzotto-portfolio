@@ -47,8 +47,20 @@
         margin-bottom: 1rem;
     }
 
+    .projects-inner-emphasis{
+          display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center; /* ou center, dependendo do layout */
+        gap: 1rem;
+    }
+
+    .projects-inner-emphasis p {
+        margin-bottom: 1rem;
+    }
+
     .emphasis-projects{
-            background: linear-gradient(to bottom right, var(--title-color), #5c2500); 
+            background: linear-gradient(to bottom right, #f8b31d, #bd6b01cb); 
             border-radius: 0 2rem;
         }
 
