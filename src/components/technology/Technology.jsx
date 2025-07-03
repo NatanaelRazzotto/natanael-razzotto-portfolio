@@ -1,4 +1,4 @@
-import './Technology.css';
+import './technology.css';
 import CardMain from '../cards-main/card-main.jsx';
 import GridMain from '../grid-main/GridMain.jsx';
 
