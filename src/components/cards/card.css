@@ -28,7 +28,7 @@
 /* Posicionamento personalizado */
 .item1 {
 
-    background: linear-gradient(to bottom right, #ff0000 , #880303); 
+    background: linear-gradient(to bottom right, #000000, #472929);
   grid-column: 1 / 2; /* coluna 1 */
   grid-row: 1 / 2;    /* linha 1 */
 }
@@ -59,3 +59,11 @@
     align-items: flex-start;
     padding: 20px
 }
+
+     .img-card-inst {
+                height: auto;
+                width: 60%;
+              
+                object-fit: cover;
+               
+            }

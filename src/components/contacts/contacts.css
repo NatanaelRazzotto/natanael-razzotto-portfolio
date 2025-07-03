@@ -1,3 +1,39 @@
-.services{
-    background-color: transparent;
+.contacts{
+    padding: 4rem 4rem;
+ 
+}
+
+.contact-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-content p {
+    margin-top: 1rem;
+}
+
+.whatsapp-btn {
+    background: linear-gradient(to bottom right, #35c850, #005c11);
+    width: 18%;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.whatsapp-btn a {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .contacts{
+        padding: 1rem;
+    }
+
+    .whatsapp-btn {
+        width: 50%;
+    }
 }

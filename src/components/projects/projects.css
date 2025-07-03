@@ -71,11 +71,12 @@
         }
 
         .emphasis-projects img.projects_img {
-            height: 300px;
-            width: 300px;
-            border-radius: 0 1rem;
-            object-fit: cover;
-            object-position: 60% 50%;
+height: 240px;
+    width: 260px;
+    border-radius: 0 2rem;
+    object-fit: contain;
+    padding: 2rem;
+
         }
 
               /* Responsividade */

@@ -1,26 +1,25 @@
-import './card.css';
+import './cards-projects.css';
 
-function Card({title,description,image,year,institution}) {
+function CardsProjects({title,description,image}) {
     return(<>
-        <div className='card-info'>
+        <div className='card-projects'>
             <div className="grid">
             <div className="item item1">
                   <img className='img-card-inst' src={image} alt="Perfil Natanael Razzotto" />
-            </div>
-            <div className="item item2">{year}</div>
+            </div>           
             <div className="item item3">
                 <div className='card-title'>
-
-                    <p>Curso</p>
+                 
                     <h4 className='title'>{title}</h4>
+                       <p>{description}</p>
                 </div>
               
             </div>
-            <div className="item item4">{institution}</div>
+         
             </div>
 
         </div>
        
     </>)
 }
-export default Card;
+export default CardsProjects;

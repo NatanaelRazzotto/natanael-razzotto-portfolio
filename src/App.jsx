@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import perfilDev from './assets/3090CL35051.JPG';
+import perfilpersonal from './assets/perfilnovo.jpeg';
 import courses from './assets/courses.jpg';
 import CarouselFormation from './components/carousel/CarouselFormation.jsx';
 import Projects from './components/projects/Projects.jsx';
@@ -35,16 +36,16 @@ function App() {
 
                 <section className="initial fundo-total">
                     
-                      <h2>Natanael Razzotto</h2>
-                    <p>O fundo se expande 100%, mas o conteúdo segue centralizado.</p>
+                      <h4>BEM VINDO AO PORTFÓLIO</h4>
+                   <h1>NATANAEL RAZZOTTO</h1>
                     
                 </section>    
                 <section className="about">
                     <div className="content">
-                        <img src={perfilDev} alt="Perfil Natanael Razzotto" />
+                        <img src={perfilpersonal} alt="Perfil Natanael Razzotto" />
                         <div className="inner-content">
 
-                            <h1>Me chamo Natanael Razzotto</h1>
+                            <h1>Conheça um pouco sobre Natanael</h1>
                             <span ref={typed2El} className="typing-2"></span>
                             <p>Sou Desenvolvedor Full Stack com conhecimentos fundamentados em POO, voltado para as tecnologias Node.js, Java e .NET. Iniciei no mundo do desenvolvimento de software em 2018, seguindo minha formação em Java e .NET, me especializei em ASP.NET, com o qual estagiei. Em minha vida acadêmica, desenvolvi projetos em várias tecnologias, para Desktop, WEB e Mobile. Nos projetos que estive envolvido, sempre busquei o planejamento e a construção dos mesmos, levando em conta as ferramentas que melhor trariam resultados, não sendo uma barreira a dinamicidade e a inovação.
                             </p>

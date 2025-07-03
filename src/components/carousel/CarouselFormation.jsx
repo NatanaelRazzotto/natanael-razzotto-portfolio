@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import courses from '../../assets/courses.jpg';
+import logoMicrosoft from '../../assets/microsoft.png';
+import logoDio from '../../assets/dio.png';
 import Card from '../cards/card.jsx';
 import 'swiper/css';
 import './carousel-formation.css';
@@ -12,44 +14,44 @@ function CarouselFormation() {
           title: "Primeiros Passos com React Native & Expo",
           year: "2025",
           institution: "Dio",
-          image: courses 
+          image: logoDio 
         },
            {
           title: "Configurando seu Ambiente de Desenvolvimento para React Native",
           year: "2025",
           institution: "Dio",
-          image: courses 
+          image: logoDio 
         },
            {
           title: "Introdução ao .NET",
           year: "2025",
           institution: "Dio",
-          image: courses 
+          image: logoDio 
         },
            {
           title: "Introduction to .NET web development with ASP.NET Core",
           year: "2025",
           institution: "MICROSOFT LEARNING ",
-          image: courses 
+          image: logoMicrosoft 
         },
             {
           title: "Build a web API with minimal API, ASP.NET Core, and .NET ",
           year: "2025",
           institution: "MICROSOFT LEARNING ",
-          image: courses 
+          image: logoMicrosoft 
         },
      
         {
           title: "Introdução a Plataforma Java",
           year: "2024",
           institution: "Dio",
-          image: courses 
+          image: logoDio 
         },
         {
           title: "Introdução ao Desenvolvimento Full Stack com a Deal",
           year: "2024",
           institution: "Dio",
-          image: courses 
+          image: logoDio 
         },
         // {
         //   title: "Full Stack Week",

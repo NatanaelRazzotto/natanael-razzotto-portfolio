@@ -1,38 +1,26 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import courses from '../../assets/courses.jpg';
-import perfilDev from '../../assets/3090CL35051.JPG';
-import Card from '../cards/card.jsx';
+import SIGUI from '../../assets/logotipo_SIGUI_header.png';
+import CardsProjects from '../cards-projects/CardsProjects.jsx';
+import PROJECT from '../../assets/entusiasta.png'
 import 'swiper/css';
 import './projects.css';
 function Projects() {
 
     
       
-      const coursesData = [
+      const projectsData = [
            {
-          title: "Primeiros Passos com React Native & Expo",
-          year: "2025",
-          institution: "Dio",
-          image: courses 
+          title: "Entusiasta da Mobilidade",         
+          description: "Projeto de um site de notícias e galeria de imagens",
+          image: PROJECT 
         },
-           {
-          title: "Configurando seu Ambiente de Desenvolvimento para React Native",
-          year: "2025",
-          institution: "Dio",
-          image: courses 
+                 {
+          title: "Entusiasta da Mobilidade",         
+          description: "Projeto de um site de notícias e galeria de imagens",
+          image: PROJECT 
         },
-           {
-          title: "Introdução ao .NET",
-          year: "2025",
-          institution: "Dio",
-          image: courses 
-        },
-           {
-          title: "Introdução ao .NET",
-          year: "2025",
-          institution: "Dio",
-          image: courses 
-        },
+      
         
       ];
 
@@ -55,9 +43,9 @@ function Projects() {
                     1440: { slidesPerView: 2 },
                 }}                 
                     >
-                    {coursesData.map((course, index) => (
+                    {projectsData.map((course, index) => (
                         <SwiperSlide key={index}>
-                            <Card title={course.title} description={course.description} image={course.image} year={course.year} institution={course.institution} />
+                            <CardsProjects title={course.title} description={course.description} image={course.image}/>
                         </SwiperSlide>
                     ))}
                     </Swiper>
@@ -65,8 +53,8 @@ function Projects() {
                   
                 </div>
                 <div className=" emphasis-projects projects-inner-emphasis">                          
-                  <img className='projects_img' src={perfilDev} alt="Perfil Natanael Razzotto" />
-                  <h3>SIGNA</h3>
+                  <img className='projects_img' src={SIGUI} alt="Perfil Natanael Razzotto" />
+                  <h3>SIGUI - 10 pela Banca!</h3>
                   <p> Trabalho de Conclusão de Curso </p>
                 </div>
               </div>
