@@ -16,6 +16,7 @@ function Formation (){
                             </div>
                             <p>Seguindo padrões de projeto e as normativas da UML, desenvolvi projetos durante minha formação com base nas tecnologias: .NET (WinForms e Blazor), Java (Desktop e WEB) e JavaScript (Node). Integrando bancos SQL e NoSQL, com base em ORMs e SGBDs.</p>
                             <p>  Disciplinas Acadêmicas Principais: Análise de Sistemas, Gerência de Projetos, Fundamentos de Economia, Fundamentos de Administração, Tópicos Avançados de Estrutura de Dados, Tópicos Avançados de Sistemas de Banco de Dados, Tópicos Avançados em Redes de Computadores.</p>
+                            <p> No ano de 2022, construí e entreguei em meu TCC um sistema chamado **SIGUI** (Sistema De Informações Geográficas Urbanas de Infraestrutura), utilizando Angular, Django Rest, Mongoengine, PostGIS, MongoDB, Docker, Ubuntu e GeoServer.</p>
                        </div>
                       
                     </div>

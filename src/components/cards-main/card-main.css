@@ -56,6 +56,6 @@
 .grid-main-card .card-title{
     flex-direction: column;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px
 }
