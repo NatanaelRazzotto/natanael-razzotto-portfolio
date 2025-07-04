@@ -1,8 +1,9 @@
 import './card.css';
 
-function Card({title,description,image,year,institution}) {
+function Card({title,description,image,year,institution,link}) {
     return(<>
         <div className='card-info'>
+              <a href={link} >
             <div className="grid">
             <div className="item item1">
                   <img className='img-card-inst' src={image} alt="Perfil Natanael Razzotto" />
@@ -18,7 +19,7 @@ function Card({title,description,image,year,institution}) {
             </div>
             <div className="item item4">{institution}</div>
             </div>
-
+</a>
         </div>
        
     </>)

@@ -1,9 +1,20 @@
 .card-info{
     border-radius: 1rem 0;
-    background-color: #292929
-;
+    background-color: #292929;
     /* background: linear-gradient(to bottom right, var(--title-color), #5c2500);  */
     width: 100%;
+    transition: 0.5s;
+}
+
+.card-info:hover {
+    transform: scale(0.9);
+    background: linear-gradient(to bottom right, var(--title-color), #5c2500);
+}
+
+
+.card-info a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .grid {

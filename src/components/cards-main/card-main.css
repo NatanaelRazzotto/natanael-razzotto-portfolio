@@ -4,13 +4,19 @@
 ;
     /* background: linear-gradient(to bottom right, var(--title-color), #5c2500);  */
     width: 100%;
+    transition: 0.5s;
 }
+
+.card-main-info:hover {
+    transform: scale(0.9);
+    background: linear-gradient(to bottom right, var(--title-color), #5c2500);
+}
+
 
 .grid-main-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80px 110px ;
-
     gap: 1rem;
     padding: 1rem;
 

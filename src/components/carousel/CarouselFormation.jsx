@@ -14,44 +14,51 @@ function CarouselFormation() {
           title: "Primeiros Passos com React Native & Expo",
           year: "2025",
           institution: "Dio",
-          image: logoDio 
+          image: logoDio ,
+          link: "https://www.dio.me/certificate/WZEUSUXT/share"
         },
            {
           title: "Configurando seu Ambiente de Desenvolvimento para React Native",
           year: "2025",
           institution: "Dio",
-          image: logoDio 
+          image: logoDio ,
+          link: ""
         },
            {
           title: "Introdução ao .NET",
           year: "2025",
           institution: "Dio",
-          image: logoDio 
+          image: logoDio ,
+            link: ""
         },
            {
           title: "Introduction to .NET web development with ASP.NET Core",
           year: "2025",
           institution: "MICROSOFT LEARNING ",
-          image: logoMicrosoft 
+          image: logoMicrosoft ,
+            link: ""
         },
             {
           title: "Build a web API with minimal API, ASP.NET Core, and .NET ",
           year: "2025",
           institution: "MICROSOFT LEARNING ",
-          image: logoMicrosoft 
+          image: logoMicrosoft ,
+            link: ""
         },
      
         {
           title: "Introdução a Plataforma Java",
           year: "2024",
           institution: "Dio",
-          image: logoDio 
+          image: logoDio ,
+            link: ""
         },
         {
           title: "Introdução ao Desenvolvimento Full Stack com a Deal",
           year: "2024",
           institution: "Dio",
-          image: logoDio 
+          image: logoDio ,
+            link: ""
         },
         // {
         //   title: "Full Stack Week",
@@ -65,32 +72,37 @@ function CarouselFormation() {
           year: "2023",
           description: "Introdução a Lógica de Programação I, II, e III (Java)",
           institution: "Capgemini",
-          image: courses
+          image: courses,
+            link: ""
         },
         {
           title: "AWS Academy Cloud Foundations",
           year: "2020",
           description: "Fundamentos de Cloud AWS",
           institution: "Amazon Web Services Training and Certification",
-          image: courses
+          image: courses,
+            link: ""
         },
         {
           title: "Entity Framework Core: Banco De Dados De Forma Eficiente",
           year: "2020",
           institution: "Alura",
-          image: courses
+          image: courses,
+            link: ""
         },
         {
           title: "GIT E GITHUB Controle e compartilhe seu código",
           year: "2020",   
           institution: "Alura",
-          image: courses
+          image: courses,
+            link: ""
         },
         {
           title: "V Prime Experts",
           year: "2020",   
           institution: "Alura",
-          image: courses
+          image: courses,
+            link: ""
         },
         
       ];
@@ -113,7 +125,7 @@ function CarouselFormation() {
                 >
                 {coursesData.map((course, index) => (
                     <SwiperSlide key={index}>
-                        <Card title={course.title} description={course.description} image={course.image} year={course.year} institution={course.institution} />
+                        <Card title={course.title} description={course.description} image={course.image} year={course.year} institution={course.institution} link={course.link} />
                     </SwiperSlide>
                 ))}
                 </Swiper>

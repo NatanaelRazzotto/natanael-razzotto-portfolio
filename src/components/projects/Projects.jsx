@@ -3,6 +3,7 @@ import courses from '../../assets/courses.jpg';
 import SIGUI from '../../assets/logotipo_SIGUI_header.png';
 import CardsProjects from '../cards-projects/CardsProjects.jsx';
 import PROJECT from '../../assets/entusiasta.png'
+import GITIMG from '../../assets/GitHub_Logo.png';
 import 'swiper/css';
 import './projects.css';
 function Projects() {
@@ -13,12 +14,14 @@ function Projects() {
            {
           title: "Entusiasta da Mobilidade",         
           description: "Projeto de um site de notícias e galeria de imagens",
+          link_project: "https://www.entusiastadamobilidade.com.br/",
           image: PROJECT 
         },
                  {
-          title: "Entusiasta da Mobilidade",         
-          description: "Projeto de um site de notícias e galeria de imagens",
-          image: PROJECT 
+          title: "Repositório de Projetos",         
+          description: "Confira outros projetos em meu repositório no GitHub",
+          link_project: "https://github.com/NatanaelRazzotto",
+          image: GITIMG 
         },
       
         
@@ -45,7 +48,7 @@ function Projects() {
                     >
                     {projectsData.map((course, index) => (
                         <SwiperSlide key={index}>
-                            <CardsProjects title={course.title} description={course.description} image={course.image}/>
+                            <CardsProjects title={course.title} description={course.description} image={course.image} link_project={course.link_project}/>
                         </SwiperSlide>
                     ))}
                     </Swiper>
